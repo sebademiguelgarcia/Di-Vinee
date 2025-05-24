@@ -77,9 +77,6 @@ h2{
     font-size: 35px;
 }
 
-
-
-
 .logo{
     height: 300px;
     width: 300px;
@@ -87,9 +84,21 @@ h2{
 }
 
 .formulario{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos */
+    gap: 15px; /* Espacio entre los campos */
+    margin-bottom: 20px; /* Espacio con el footer */
 }
 
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Color azul, puedes cambiarlo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
 ul{
     list-style-type: none;
@@ -125,6 +134,13 @@ footer{
     display: flex;
     justify-content: space-around;
 }
+
+footer img {
+    width: 40px; /* Tamaño adecuado del logo de WhatsApp */
+    height: 40px;
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
 
 .navegacion{
     margin: 65px;
