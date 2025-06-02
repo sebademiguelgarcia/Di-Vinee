@@ -1,0 +1,40 @@
+// variables
+// Variables de colores
+$color-fondo: black;
+$color-texto: white;
+$color-dorado: gold;
+$color-borde: gray;
+$color-boton: #007bff;
+
+// Variables de espaciado y bordes
+$espaciado-peq: 10px;
+$espaciado-med: 20px;
+$espaciado-grande: 50px;
+$radio-borde: 10px;
+
+// Variables de tamaño de texto
+$tamaño-texto: 20px;
+$tamaño-h1: 75px;
+$tamaño-h2: 35px;
+$tamañoo-h3: 25px;
+
+// Variables de tamaño de elementos
+$tamaño-logo: 300px;
+$tamaño-boton: 40px;
+$tamaño-input: 20px;
+
+// Variables responsivas
+$tamaño-logo-resp: 200px;
+
+// Mixin para tamaños de pantalla
+@mixin mobile {
+    @media screen and (max-width: 480px) { @content; }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) { @content; }
+}
+
+@mixin desktop {
+    @media screen and (max-width: 1024px) { @content; }
+}

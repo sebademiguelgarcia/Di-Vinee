@@ -1,0 +1,141 @@
+@import "variables";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $espaciado-peq;
+
+    .menu {
+        display: flex;
+
+        .navegacion {
+            display: flex;
+            list-style: none;
+            gap: $espaciado-med;
+            margin: 65px;
+            padding: 40px;
+            background-color: $color-texto;
+            border-radius: $radio-borde;
+
+            li {
+                display: inline-block;
+                border: solid;
+                background-color: $color-texto;
+                text-decoration: none;
+
+                a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr 30% 1fr;
+    align-items: center;
+    gap: 0px;
+
+    .texto-izquierda,
+    .texto-derecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 1.2em;
+        max-width: 100%;
+    }
+
+    .fotos {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0 !important;
+    }
+}
+
+h2 {
+    margin: $espaciado-med;
+    color: $color-texto;
+    text-align: center;
+    font-size: $tamaño-h2;
+}
+
+.logo {
+    height: $tamaño-logo;
+    width: $tamaño-logo;
+    margin: $espaciado-peq 25px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: $espaciado-med;
+}
+
+button {
+    padding: $espaciado-peq $espaciado-med;
+    background-color: $color-boton;
+    color: $color-texto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: $tamaño-h3;
+    text-align: right;
+    color: $color-texto;
+
+    li {
+        color: $color-texto;
+        display: inline-block;
+        border: solid;
+        background-color: $color-texto;
+        text-decoration: none;
+    }
+}
+
+p {
+    margin: $espaciado-med;
+    font-size: $tamaño-texto;
+    text-align: center;
+    border-style: solid;
+    border-color: $color-borde;
+    border-width: thick;
+    border-radius: $radio-borde;
+    padding: $espaciado-grande;
+}
+
+footer {
+    padding: $espaciado-med;
+    background-color: $color-dorado;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        width: $tamaño-boton;
+        height: $tamaño-boton;
+        margin-right: $espaciado-peq;
+    }
+}
